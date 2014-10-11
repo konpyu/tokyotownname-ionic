@@ -1,0 +1,28 @@
+<ion-view title="TokyoTownName">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left"class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+
+  <ion-content class="has-header">
+    <ion-list>
+      <ion-item ng-repeat="photo in photos">
+        <div class="center tl-wrap">
+          <img class="tl-wrap" ng-src="{{ photo.image }}">
+          <div>
+            <div>
+              <span class="tl-text2" ng-bind="photo.ward_name"></span>
+              <span class="tl-text2" ng-bind="photo.town_name"></span>
+              <span class="tl-text2" ng-bind="photo.user_name"></span>
+            </div>
+            <div>
+              <span class="tl-text2" ng-bind="photo.created_at | date:'yyyy/MM/dd HH:mm'"></span>
+            </div>
+          </div>
+        </div>
+      </ion-item>
+    </ion-list>
+    <button class="button button-block button-positive" ng-click="nextPage()">
+      もっとみる
+    </button>
+  </ion-content>
+</ion-view>

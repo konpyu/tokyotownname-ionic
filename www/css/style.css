@@ -1,0 +1,16 @@
+/* Empty. Add your own CSS if you like */
+
+.center {
+    margin: 0 auto;
+}
+
+.tl-wrap {
+    width: 100%;
+}
+
+.tl-text1 {
+    font-size: 18px;
+}
+.tl-text2 {
+    font-size: 14px;
+}

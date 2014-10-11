@@ -1,0 +1,17 @@
+<ion-view ng-init="initAchieve()" title="達成状況">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left"class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-content class="has-header">
+    <ion-list>
+      <ion-item ng-repeat="ward in wards">
+        <span ng-bind="ward.ward_name"></span>
+        <span>(</span>
+        <span ng-bind="ward.num"></span>
+        <span>/</span>
+        <span ng-bind="ward.max_num"></span>
+        <span>)</span>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
